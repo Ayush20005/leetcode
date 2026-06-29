@@ -6,9 +6,10 @@ public:
         if(n!=y){return false;}
         sort(s.begin(),s.end());
         sort(t.begin(),t.end());
-       // if(s==t){
-            return s==t;
-       // }
+       if(s==t){
+            //return s==t;
+            return true;
+        }
         return false;
     }
 };
