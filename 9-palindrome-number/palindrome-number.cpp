@@ -11,12 +11,15 @@ public:
              revNum = revNum*10 + d;
              n = n/10;   
                  }
+                 /*
              if(revNum==x){
                 return true ;
              }
              else{
                 return false;
              }
+             */
+             return revNum==x;
         
     }
 };
