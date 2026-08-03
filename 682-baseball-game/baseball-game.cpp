@@ -17,8 +17,13 @@ public:
             }
 }
      int sum=0;
+     /*
      for(int score: stack){
         sum+=score;
+     }
+     */
+     for(int i=0;i<stack.size();i++){
+        sum+=stack[i];
      }
 return sum;
     }
