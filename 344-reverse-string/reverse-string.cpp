@@ -1,8 +1,15 @@
 class Solution {
 public:
+void helper(vector<char>&s,int left ,int right){
+    if(left>=right) return;
+    
+        swap(s[left],s[right]);
+        helper(s,left+1,right-1);
+    
+}
     void reverseString(vector<char>& s) {
-        int n=s.size();
-       /*
+       
+       /* step-1:
         if(i >= j)
         return;
         
@@ -16,6 +23,9 @@ public:
         solve(s, 0, s.size() - 1);
         // this will return the reverse string .
         */
+        //step-2
+      
+      /*
        int left=0;
        int right=n-1;
        while(left<right){
@@ -23,5 +33,11 @@ public:
          left++;
          right--;
        }
+       */
+int n=s.size();
+helper(s,0,n-1);
+
+
+
     }
 };
