@@ -5,10 +5,12 @@ public:
         
     }
     
+    
     void push(int x) {
         st.push(x);
     }
-    
+    //in this case we go till the base case and then remove that element and again push the removed element into the stack.
+
     int pop() {
          int x = st.top();
     st.pop();
@@ -24,6 +26,8 @@ public:
     return ans;
     }
     
+
+//in this we first take all the element out of the satck and return the first value (base case) and then again push the element into the stack. 
     int peek() {
          int x = st.top();
 
@@ -41,6 +45,7 @@ public:
 
     }
     
+
     bool empty() {
         return st.empty();
     }
